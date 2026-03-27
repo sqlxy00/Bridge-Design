@@ -41,7 +41,7 @@
         .hero-bg {
             background-image:
                 linear-gradient(120deg, rgba(44, 62, 80, 0.72), rgba(44, 62, 80, 0.48)),
-                url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1800&q=80');
+                url('https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -49,6 +49,25 @@
         @media (max-width: 768px) {
             .section-padding { padding: 50px 15px; }
             .hero-bg { background-position: 60% center; }
+        }
+
+        /* スクロール・リビール */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translate3d(0, 28px, 0) scale(0.98);
+            transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: opacity, transform;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scale(1);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal-on-scroll {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
         }
     </style>
 </head>
@@ -178,7 +197,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                 <article class="bg-white border border-gray-200 rounded-2xl pb-4 shadow-sm h-full overflow-hidden">
                     <div class="overflow-hidden mb-5 bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="整理して進めるイメージ" class="w-full h-48 object-cover">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="整理して進めるイメージ" class="w-full h-48 object-cover">
                     </div>
                     <div class="px-3 pb-2">
                         <h3 class="text-2xl font-bold mb-3 text-center">01 整理から始める</h3>
@@ -194,7 +213,7 @@
                 </article>
                 <article class="bg-white border border-gray-200 rounded-2xl pb-4 shadow-sm h-full overflow-hidden">
                     <div class="overflow-hidden mb-5 bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80" alt="必要な施策を選ぶイメージ" class="w-full h-48 object-cover">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="必要な施策を選ぶイメージ" class="w-full h-48 object-cover">
                     </div>
                     <div class="px-3 pb-2">
                         <h3 class="text-2xl font-bold mb-3 text-center">02 作らない選択肢</h3>
@@ -208,7 +227,7 @@
                 </article>
                 <article class="bg-white border border-gray-200 rounded-2xl pb-4 shadow-sm h-full overflow-hidden">
                     <div class="overflow-hidden mb-5 bg-gray-100">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80" alt="自走を支援するイメージ" class="w-full h-48 object-cover">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="自走を支援するイメージ" class="w-full h-48 object-cover">
                     </div>
                     <div class="px-3 pb-2">
                         <h3 class="text-2xl font-bold mb-3 text-center">03 自走を支援</h3>
@@ -325,7 +344,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
                     <article class="flex flex-col items-center">
-                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=320&q=80" alt="お客様イメージ1" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様イメージ1" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
                         <div class="relative bg-gray-50 border border-gray-200 rounded-2xl p-6 w-full">
                             <div class="absolute left-8 -top-3 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[12px] border-b-gray-200" aria-hidden="true"></div>
                             <div class="absolute left-[33px] -top-[10px] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[10px] border-b-gray-50" aria-hidden="true"></div>
@@ -348,7 +367,7 @@
                     </article>
 
                     <article class="flex flex-col items-center">
-                        <img src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?auto=format&fit=crop&w=320&q=80" alt="お客様イメージ2" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様イメージ2" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
                         <div class="relative bg-gray-50 border border-gray-200 rounded-2xl p-6 w-full">
                             <div class="absolute left-8 -top-3 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[12px] border-b-gray-200" aria-hidden="true"></div>
                             <div class="absolute left-[33px] -top-[10px] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[10px] border-b-gray-50" aria-hidden="true"></div>
@@ -371,7 +390,7 @@
                     </article>
 
                     <article class="flex flex-col items-center">
-                        <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=320&q=80" alt="お客様イメージ3" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
+                        <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様イメージ3" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4">
                         <div class="relative bg-gray-50 border border-gray-200 rounded-2xl p-6 w-full">
                             <div class="absolute left-8 -top-3 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[12px] border-b-gray-200" aria-hidden="true"></div>
                             <div class="absolute left-[33px] -top-[10px] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[10px] border-b-gray-50" aria-hidden="true"></div>
@@ -399,7 +418,7 @@
                     <div class="max-w-3xl mx-auto space-y-6">
                         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
                             <div class="flex items-center gap-4 border-y border-gray-200 py-4 mb-5">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=140&q=80" alt="お客様写真1" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
+                                <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様写真1" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
                                 <p class="text-lg font-bold text-navy leading-relaxed text-left">
                                     「整理してもらって、<br>
                                     やることが明確になりました」
@@ -418,7 +437,7 @@
 
                         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
                             <div class="flex items-center gap-4 border-y border-gray-200 py-4 mb-5">
-                                <img src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?auto=format&fit=crop&w=140&q=80" alt="お客様写真2" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
+                                <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様写真2" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
                                 <p class="text-lg font-bold text-navy leading-relaxed text-left">
                                     「整理してもらって、<br>
                                     やることが明確になりました」
@@ -437,7 +456,7 @@
 
                         <article class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
                             <div class="flex items-center gap-4 border-y border-gray-200 py-4 mb-5">
-                                <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=140&q=80" alt="お客様写真3" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
+                                <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="お客様写真3" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm">
                                 <p class="text-lg font-bold text-navy leading-relaxed text-left">
                                     「整理してもらって、<br>
                                     やることが明確になりました」
@@ -585,7 +604,7 @@
 
             <div class="grid grid-cols-2 gap-5 md:gap-12 items-start">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Bridge Designプロフィール写真" class="w-full h-auto max-h-[560px] rounded-2xl object-cover shadow-sm border border-gray-200">
+                    <img src="https://dummyimage.com/1200x800/252525/e8e1d6&text=Dummy+Image" alt="Bridge Designプロフィール写真" class="w-full h-auto max-h-[560px] rounded-2xl object-cover shadow-sm border border-gray-200">
                 </div>
 
                 <div>
@@ -765,6 +784,46 @@
                 icon.textContent = isOpen ? '+' : '-';
             });
         });
+
+        // スクロール・リビール
+        const revealTargets = document.querySelectorAll(
+            'header .max-w-2xl, section > .container, section article, #about .grid > div, #voice .max-w-3xl article, #profile-detail .grid > div, footer .container'
+        );
+
+        revealTargets.forEach((el, index) => {
+            el.classList.add('reveal-on-scroll');
+            el.style.transitionDelay = `${Math.min((index % 4) * 90, 270)}ms`;
+        });
+
+        // 悩みセクションは上から順番に表示
+        document.querySelectorAll('#about .grid > div').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 140}ms`;
+        });
+
+        // ご利用の流れはSTEP1→4の順で表示
+        document.querySelectorAll('#flow .grid > article').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 170}ms`;
+        });
+
+        if (!('IntersectionObserver' in window)) {
+            revealTargets.forEach((el) => el.classList.add('is-visible'));
+        } else {
+            const revealObserver = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    });
+                },
+                {
+                    threshold: 0.16,
+                    rootMargin: '0px 0px -8% 0px'
+                }
+            );
+
+            revealTargets.forEach((el) => revealObserver.observe(el));
+        }
     </script>
 </body>
 </html>
